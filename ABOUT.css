@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+body{
+   /* background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));*/
+    min-height: 100vh;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/042/393/057/non_2x/abstract-black-and-white-background-with-copy-space-modern-template-for-business-presentation-cover-web-page-free-vector.jpg");
+    background-repeat: norepeat;
+    background-size: cover;
+   
+}
+.hero{
+    overflow: hidden;
+
+}
+.heading h1{
+    color:#ff6347 ;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.hero-content{
+    flex: 1;
+   width: 600px;
+   margin: 0px 25px;
+   animation: fadeInUp 2s ease;
+}
+.hero-content h2{
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: black;
+}
+.hero-content p{
+    font-size: 54px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #bd830f;
+}
+.hero-image{
+    flex: 1;
+   width: 600px;
+   margin: auto;
+   animation: fadeInRight 2s ease;
+   
+}
+.hero-image h1{
+    padding: 50px;
+    font-weight: 1500;
+    font-size: 47px;
+
+}
+.new-image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+@media screen and (max-width:768px){
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+        flex: 1;
+
+
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-image{
+        width: 100%;
+    }
+
+}
+
+@media  (min-width:640px){
+   .card{
+    flex-direction: row;
+   }
+
+}
+@media  (max-width:640px){
+    .card{
+     flex-direction: column;
+    }
+ 
+ }
+.card{
+    height: 25vw;
+   /* background-color: #ff6347;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+   
+   
+}
+#mission{
+    height: 20vw;
+    width: 20vw;
+    background: white;
+    box-shadow:  0 0 20px 10px rgba(0,0,0,.4);
+   
+    text-align: center;
+   
+}
+i{
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+.card h1{
+    margin-top: 10px;
+    
+}
+#vision{
+    height: 20vw;
+    width: 20vw;
+    background: rgb(111, 179, 211);
+    box-shadow:  0 0 20px 10px rgba(0,0,0,.4);
+   
+    text-align: center;
+}
+#achievements{
+    height: 20vw;
+    width: 20vw;
+    background: white;
+    box-shadow:  0 0 20px 10px rgba(0,0,0,.4);
+   
+    text-align: center;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform: translateY(50px);
+    }
+   100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity:0;
+        transform: translateX(-50px);
+    }
+   100%{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+
+.slider{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.slider .row{
+    display: flex;
+    width: calc(100px * 18);
+    animation: slide 10s linear infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(calc(100px *18));
+    }
+}
+.slider .column{
+    perspective: 100px;
+    padding: 15px;
+}
