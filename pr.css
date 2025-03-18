@@ -23,7 +23,8 @@ img{
     width: 10rem;
 }
 main form input{
-    width: 25rem;
+    
+    width: 20rem;
     padding: .5rem;
     height: 3rem;
     letter-spacing: 2px;
@@ -53,4 +54,10 @@ button{
     padding: auto;
     background: #7fad39;
 }
-
+form{
+    display: flex;
+    text-align: center;
+}
+form .search{
+    margin: 12px 12px;
+}

@@ -42,15 +42,7 @@ body{
 }
 
 
-.back-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+
 
 /* Navigation */
 .nav {
@@ -77,11 +69,11 @@ body{
     top: 0;
     width: 100;
     z-index: 1;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 .new-nav h1{
     margin: 0;
-    font-size: 55px;
+    font-size: 30px;
     padding: 10px 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #f9f9f9;
@@ -112,6 +104,7 @@ body{
     top: 20px;
     right: 20px;
     z-index: 1001;
+    padding-right: 25px;
 }
 
 /* Responsive Nav */
@@ -281,8 +274,8 @@ body{
     display: none;
 }
 .slider-wrapper .image-list .item{
-    width: 325px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -534,6 +527,7 @@ body{
         border-radius: 5px;
         padding: 10px;
         opacity: 0;
+      gap: 15px;
         pointer-events: none; /* Initially, clicks को disable करना */
         transform: translateY(-10px);
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;

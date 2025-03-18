@@ -73,7 +73,8 @@
 
 }
 .contactForm{
-    width: 40%;
+   /* width: 40%;*/
+   width: 80%;
     padding: 40px;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -156,6 +157,13 @@ button{
     .container .contactInfo,
     contactForm{
        width: 100%;
+    }
+}
+@media(max-width:480px){
+    input{
+        height: 30px;
+        font-size: 12px;
+        padding: 8px;
     }
 }
 
