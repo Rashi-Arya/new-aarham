@@ -41,18 +41,23 @@ main .container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 2rem;
+    
 }
 main .container>div{
     width: 100;
     text-align: center;
     padding: .5rem;
     box-shadow: 1px 1px 10px rgba(0,0, 0, .1);
+    border: 1.5px solid #ff6600;
+}
+form #input{
+    border: 1.5px solid black;
 }
 button{
     height: 40px;
     width: 110px;
     padding: auto;
-    background: #7fad39;
+    background: #ff6600;
 }
 form{
     display: flex;

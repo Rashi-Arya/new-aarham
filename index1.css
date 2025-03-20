@@ -104,7 +104,7 @@ body{
     top: 20px;
     right: 20px;
     z-index: 1001;
-    padding-right: 25px;
+    padding-right: 20px;
 }
 
 /* Responsive Nav */
@@ -250,6 +250,8 @@ body{
 }
 .slider-container {
     /* position: relative; */
+   
+    margin-top: 25px;
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
@@ -260,6 +262,8 @@ body{
     display: flex;
     transition: transform 1s ease-in-out;*/
 }
+
+
 .slider-wrapper .image-list{
     display: flex;
     gap: 18px;
@@ -312,6 +316,7 @@ body{
     height: auto;
     max-height: 100%;
     border-radius: 10px;
+    border: 1.5px solid #ff6600;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
    /* transition: opacity 1s;*/
     object-fit: contain;
@@ -460,6 +465,13 @@ body{
     font-family: 'Arial', sans-serif;
     line-height: 1.8;
     text-align: center;
+}
+.contentText #heading{
+    font-weight: 1000;
+
+}
+.contentText  #info{
+    color: rgb(33, 30, 30);
 }
 
 .contentText:hover {
